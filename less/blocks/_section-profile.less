@@ -1,0 +1,122 @@
+.section-profile {
+	padding-top: 40px;
+	@media (min-width: @iphone) {
+		padding-top: 60px;
+	}
+	@media (min-width: @ipad-mini) {
+		padding-top: 100px;
+	}
+	@media (min-width: @ipad-pro) {
+		padding-top: 140px;
+	}
+	@media (min-width: @macbook13) {
+		padding-top: 240px;
+	}
+}
+
+.img-wrapper {
+	position: relative;
+	border-radius: 20px;
+	margin-bottom: 60px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@media (min-width: @iphone) {
+	}
+	@media (min-width: @ipad-mini) {
+		margin-bottom: 0;
+	}
+	@media (min-width: @ipad-pro) {
+		// height: 380px;
+	}
+	@media (min-width: @macbook13) {
+		// height: 410px;
+	}
+}
+.profile-desc {
+	width: 100%;
+	text-align: left;
+	z-index: 2;
+	@media (min-width: @iphone) {
+	}
+	@media (min-width: @ipad-mini) {
+		width: 70%;
+	}
+	@media (min-width: @ipad-pro) {
+		width: 50%;
+	}
+	@media (min-width: @macbook13) {
+	}
+}
+.profile-title {
+	font-size: 38px;
+	font-weight: 800;
+	line-height: 1.2;
+	margin-bottom: 20px;
+	.bottom-line {
+		&::after {
+			bottom: 7px;
+			height: 12px;
+		}
+	}
+	@media (min-width: @iphone) {
+		font-size: 42px;
+	}
+	@media (min-width: @ipad-mini) {
+		font-size: 55px;
+	}
+	@media (min-width: @ipad-pro) {
+		font-size: 70px;
+		.bottom-line {
+			&::after {
+				bottom: 14px;
+			}
+		}
+	}
+	@media (min-width: @macbook13) {
+		font-size: 90px;
+		font-weight: 800;
+		margin-bottom: 20px;
+		.bottom-line {
+			&::after {
+				bottom: 20px;
+			}
+		}
+	}
+}
+
+.profile-desc p {
+	max-width: 280px;
+	font-size: 18px;
+	line-height: 1.5;
+	text-shadow: 0 3px 42px #ffffff;
+	color: #393f47;
+	font-weight: 500;
+	margin-bottom: 25px;
+	@media (min-width: @iphone) {
+	}
+	@media (min-width: @ipad-mini) {
+		max-width: 330px;
+	}
+	@media (min-width: @ipad-pro) {
+		max-width: 400px;
+		font-size: 20px;
+	}
+	@media (min-width: @macbook13) {
+		max-width: 490px;
+		font-size: 24px;
+		margin-bottom: 25px;
+	}
+}
+.profile-desc a {
+	display: none;
+	@media (min-width: @ipad-mini) {
+	}
+	@media (min-width: @ipad-pro) {
+		display: inline-block;
+		margin-right: 20px;
+	}
+	@media (min-width: @macbook13) {
+	}
+}

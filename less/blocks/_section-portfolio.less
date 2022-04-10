@@ -1,0 +1,281 @@
+.section-portfolio {
+	padding-top: 121px;
+	padding-bottom: 128px;
+	background-color: #f4f8f9;
+	@media (min-width: @iphone) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	@media (min-width: @ipad-mini) {
+		padding-top: 80px;
+		padding-bottom: 100px;
+	}
+	@media (min-width: @ipad-pro) {
+	}
+	@media (min-width: @macbook13) {
+		padding-top: 121px;
+		padding-bottom: 128px;
+	}
+}
+.portfolio-title {
+	color: #000000;
+	font-weight: 800;
+	font-size: 38px;
+	margin-bottom: 30px;
+	@media (min-width: @iphone) {
+		margin-bottom: 30px;
+	}
+	@media (min-width: @ipad-mini) {
+		font-size: 55px;
+		text-align: center;
+	}
+	@media (min-width: @ipad-pro) {
+		margin-left: 30px;
+		text-align: left;
+	}
+	@media (min-width: @macbook13) {
+		margin-left: 0;
+		margin-bottom: 66px;
+		color: #000000;
+		font-size: 64px;
+		font-weight: 800;
+	}
+}
+.section-portfolio__nav {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	@media (min-width: @iphone) {
+		margin-bottom: 35px;
+	}
+	@media (min-width: @ipad-mini) {
+		margin-bottom: 50px;
+		justify-content: space-between;
+	}
+	@media (min-width: @ipad-pro) {
+	}
+	@media (min-width: @macbook13) {
+	}
+}
+.control-active {
+	color: #000000;
+}
+.mobile-scroll {
+	overflow-x: scroll;
+}
+.portfolio__nav-link {
+	color: #8fa5ae;
+	font-weight: 800;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	font-size: 20px;
+	text-align: left;
+	&:active,
+	&:hover {
+		color: #ed574f;
+	}
+	@media (min-width: @iphone) {
+		margin-right: 15px;
+		margin-bottom: 15px;
+		font-size: 20px;
+	}
+	@media (min-width: @ipad-mini) {
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 0;
+		font-size: 24px;
+	}
+	@media (min-width: @ipad-pro) {
+		margin-left: 30px;
+		margin-right: 30px;
+		font-size: 26px;
+	}
+	@media (min-width: @macbook13) {
+		margin-left: 0;
+		margin-right: 85px;
+		font-size: 28px;
+	}
+}
+.projects-samples {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	@media (min-width: @ipad-pro) {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: flex-start;
+	}
+	@media (min-width: @macbook13) {
+		justify-content: flex-start;
+		align-items: center;
+	}
+}
+.project-samples__item {
+	transition: 0.5s;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 30px;
+	&:hover {
+		box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
+		transform: translateY(-20px);
+		background-color: #f5f5f5;
+	}
+	@media (min-width: @iphone) {
+	}
+	@media (min-width: @ipad-mini) {
+		transition: 0.5s;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 60px;
+	}
+	@media (min-width: @ipad-pro) {
+		margin-bottom: 40px;
+	}
+	@media (min-width: @macbook13) {
+	}
+}
+.project-sample__link {
+	display: inline-block;
+	transition: all 0.5s;
+	background-color: #fff;
+	&:hover {
+		.project-sample__hover-button {
+			opacity: 1;
+		}
+		.project-sample__img-wrapper {
+			&::after {
+				transform: translateY(0%);
+			}
+		}
+	}
+	@media (min-width: @macbook13) {
+		&.project-sample--big {
+			.project-sample__img-wrapper {
+				width: 550px;
+				height: 300px;
+			}
+			.project-sample__hover-button {
+				width: 40%;
+				font-size: 19px;
+			}
+			.project-sample__desc-wrapper {
+				max-width: 550px;
+			}
+			.project-sample__title {
+				font-size: 32px;
+			}
+			.project-sample__desc {
+				font-size: 22px;
+			}
+		}
+	}
+}
+.project-sample__img-wrapper {
+	position: relative;
+	width: 250px;
+	height: 200px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	&::after {
+		transition: all 0.5s;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: @btnHov;
+		opacity: 0.3;
+		transform: translateY(100%);
+	}
+	@media (min-width: @iphone) {
+		margin-bottom: 25px;
+		width: 270px;
+		height: 220px;
+	}
+	@media (min-width: @ipad-mini) {
+		width: 530px;
+		height: 300px;
+	}
+	@media (min-width: @ipad-pro) {
+		width: 360px;
+		height: 220px;
+	}
+}
+.project-sample__hover-button {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 45%;
+	height: 15%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	color: #ed574f;
+	font-size: 15px;
+	background-color: #ffffff;
+	border-radius: 26px;
+	font-weight: 800;
+	opacity: 0;
+	transition: all 0.5s;
+	z-index: 2;
+	&:hover {
+		color: #ffffff;
+		background-color: #ea736d;
+	}
+}
+.project-sample__desc-wrapper {
+	max-width: 250px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	@media (min-width: @iphone) {
+		max-width: 270px;
+		padding-left: 10px;
+		padding-bottom: 10px;
+	}
+	@media (min-width: @ipad-mini) {
+		max-width: 530px;
+	}
+	@media (min-width: @ipad-pro) {
+		max-width: 360px;
+	}
+}
+.project-sample__title {
+	font-size: 20px;
+	margin-bottom: 5px;
+	line-height: 1.2;
+	font-weight: 700;
+	color: #000000;
+	@media (min-width: @iphone) {
+		font-size: 22px;
+		margin-bottom: 5px;
+	}
+	@media (min-width: @ipad-mini) {
+		font-size: 26px;
+		margin-bottom: 10px;
+	}
+	@media (min-width: @ipad-pro) {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	@media (min-width: @macbook13) {
+		margin-bottom: 14px;
+		font-size: 26px;
+	}
+}
+.project-sample__desc {
+	color: #000000;
+	font-size: 16px;
+	font-weight: 300;
+	@media (min-width: @iphone) {
+		font-size: 18px;
+	}
+	@media (min-width: @ipad-mini) {
+		font-size: 20px;
+	}
+}

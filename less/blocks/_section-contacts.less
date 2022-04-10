@@ -1,0 +1,246 @@
+.section-contacts {
+	padding-top: 50px;
+	padding-bottom: 100px;
+	background-color: #70aff6;
+	@media (min-width: @iphone) {
+	}
+	@media (min-width: @ipad-mini) {
+		padding-bottom: 80px;
+	}
+	@media (min-width: @ipad-pro) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	@media (min-width: @macbook13) {
+		padding-top: 161px;
+		padding-bottom: 150px;
+	}
+}
+.section-contacts__title {
+	color: #000000;
+	font-weight: 800;
+	text-align: center;
+	font-size: 38px;
+	position: relative;
+	z-index: 2;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 8px;
+		left: -5px;
+		right: -5px;
+		height: 12px;
+		background-color: @underline;
+		z-index: -1;
+		@media (min-width: @iphone) {
+		}
+		@media (min-width: @ipad-mini) {
+		}
+		@media (min-width: @ipad-pro) {
+		}
+		@media (min-width: @macbook13) {
+			bottom: 15px;
+		}
+	}
+	@media (min-width: @iphone) {
+	}
+	@media (min-width: @ipad-mini) {
+		font-size: 55px;
+		margin-bottom: 60px;
+	}
+	@media (min-width: @macbook13) {
+		font-size: 64px;
+	}
+}
+.contacts-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	@media (min-width: @iphone) {
+	}
+	@media (min-width: @ipad-mini) {
+	}
+	@media (min-width: @ipad-pro) {
+		align-items: flex-start;
+		flex-direction: row;
+	}
+	@media (min-width: @macbook13) {
+		align-items: center;
+	}
+}
+.contacts-content__wrapper {
+	max-width: 300px;
+	position: relative;
+	&::before {
+		position: absolute;
+		top: -32px;
+		right: 403px;
+		content: "";
+		width: 448px;
+		height: 280px;
+		background-image: url("../img/bg/contacts-bg.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	@media (min-width: @iphone) {
+	}
+	@media (min-width: @ipad-mini) {
+		max-width: 500px;
+	}
+	@media (min-width: @ipad-pro) {
+		max-width: 325px;
+	}
+	@media (min-width: @macbook13) {
+		max-width: 500px;
+	}
+	.skills-contacts__links {
+		margin-bottom: 50px;
+		a {
+			margin: 0;
+		}
+		@media (min-width: @iphone) {
+		}
+		@media (min-width: @ipad-mini) {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@media (min-width: @ipad-pro) {
+			margin: 0;
+		}
+	}
+}
+.contacts-desc {
+	color: #000000;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 32px;
+	text-align: left;
+	margin-bottom: 50px;
+	@media (min-width: @iphone) {
+	}
+	@media (min-width: @ipad-mini) {
+		text-align: center;
+	}
+	@media (min-width: @ipad-pro) {
+		text-align: left;
+	}
+}
+.contacts-list {
+	margin-bottom: 50px;
+}
+.contacts-list__item {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	align-items: flex-start;
+	flex-direction: column;
+	@media (min-width: @ipad-mini) {
+		align-items: center;
+		margin-bottom: 30px;
+		flex-direction: row;
+	}
+	@media (min-width: @ipad-pro) {
+		align-items: flex-start;
+		margin-bottom: 30px;
+		flex-direction: column;
+	}
+	@media (min-width: @macbook13) {
+		align-items: center;
+		margin-bottom: 30px;
+		flex-direction: row;
+	}
+}
+.contacts-list__item span {
+	margin-right: 100px;
+	color: #000000;
+	font-size: 20px;
+	font-weight: 700;
+}
+.contacts-list__item a {
+	@media (min-width: @iphone) {
+	}
+	@media (min-width: @ipad-mini) {
+	}
+	@media (min-width: @ipad-pro) {
+		margin-right: 100px;
+	}
+	@media (min-width: @macbook13) {
+	}
+	&:hover {
+		text-shadow: #c2dbeb 0px 0px 1px;
+		text-decoration: underline;
+	}
+}
+.contacts-list__item .link-email {
+	text-decoration: none;
+	color: #039be5;
+	font-size: 20px;
+	font-weight: 500;
+}
+.contacts-form__wrapper {
+	min-width: 300px;
+	padding: 20px;
+	background-color: #ffffff;
+	box-shadow: 0 28px 100px #c2dbeb;
+	@media (min-width: @iphone) {
+	}
+	@media (min-width: @ipad-mini) {
+		min-width: 540px;
+		padding: 30px;
+	}
+	@media (min-width: @ipad-pro) {
+		min-width: 400px;
+		padding: 40px;
+	}
+	@media (min-width: @macbook13) {
+		min-width: 500px;
+		padding: 60px 60px 40px 60px;
+	}
+}
+.contancts-form__item {
+	position: relative;
+}
+.fake-placeholder {
+	position: absolute;
+	top: -20px;
+	left: 5px;
+	color: transparent;
+	font-size: 16px;
+	font-weight: 700;
+	transition: 1s;
+}
+.fake-placeholder.active {
+	color: #ed9626;
+}
+.contancts-form__item textarea {
+	height: 100px;
+	resize: none;
+}
+.form__field {
+	width: 100%;
+	margin-bottom: 40px;
+	height: 50px;
+	font-family: var(--fr);
+	font-size: 20px;
+	font-weight: 700;
+	background-color: #fff;
+	border-radius: 1px;
+	border: none;
+	border-bottom: 2px solid #eaeaea;
+	outline: none;
+	padding-left: 5px;
+	&::placeholder {
+		color: #bcbcbc;
+		font-size: 20px;
+		font-weight: 700;
+		text-align: left;
+		transition: 0.7s ease;
+	}
+	&:focus::placeholder {
+		color: transparent;
+	}
+}

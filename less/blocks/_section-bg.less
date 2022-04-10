@@ -1,0 +1,28 @@
+.section-bg {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-top: -50px;
+	overflow: hidden;
+	@media (min-width: @iphone) {
+		margin-top: -60px;
+	}
+	@media (min-width: @ipad-mini) {
+		padding-top: 0px;
+		padding-bottom: 0px;
+		margin-top: -80px;
+	}
+	@media (min-width: @ipad-pro) {
+	}
+	@media (min-width: @macbook13) {
+		margin-top: -132px;
+	}
+	&__img {
+		transform: scale(1.8);
+		@media (min-width: @ipad-mini) {
+			transform: scale(1.2);
+		}
+		@media (min-width: @ipad-pro) {
+			transform: scale(1);
+		}
+	}
+}

@@ -1,0 +1,178 @@
+.section-timeline {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	@media (min-width: @iphone) {
+	}
+	@media (min-width: @ipad-mini) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	@media (min-width: @ipad-pro) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	@media (min-width: @macbook13) {
+		padding-top: 150px;
+		padding-bottom: 150px;
+	}
+}
+.timeline {
+	margin-left: auto;
+	margin-right: auto;
+	@media (min-width: @iphone) {
+	}
+	@media (min-width: @ipad-mini) {
+	}
+	@media (min-width: @ipad-pro) {
+	}
+	@media (min-width: @macbook13) {
+		width: 1005px;
+	}
+}
+.timeline-title {
+	color: #000000;
+	font-weight: 800;
+	text-align: center;
+	margin-bottom: 80px;
+	font-size: 38px;
+	@media (min-width: @iphone) {
+	}
+	@media (min-width: @ipad-mini) {
+		margin-bottom: 155px;
+		font-size: 55px;
+	}
+	@media (min-width: @ipad-pro) {
+		font-size: 64px;
+	}
+	@media (min-width: @macbook13) {
+	}
+}
+.timeline-title span {
+	z-index: 2;
+}
+.timeline-title .bottom-line::after {
+	content: "";
+	position: absolute;
+	bottom: 3px;
+	left: -5px;
+	right: -5px;
+	height: 12px;
+	background-color: @underline;
+	z-index: -1;
+	@media (min-width: @ipad-mini) {
+		bottom: 10px;
+	}
+}
+.timeline-item {
+	position: relative;
+	min-height: 170px;
+	padding-left: 100px;
+	margin-bottom: 20px;
+	&::after {
+		content: "";
+		width: 5px;
+		border-radius: 3px;
+		background-color: #e1eef4;
+		position: absolute;
+		top: 94px;
+		left: 37px;
+		bottom: 0;
+	}
+
+	@media (min-width: @ipad-mini) {
+		width: 50%;
+		&:nth-child(2n + 1) {
+			text-align: right;
+			padding-left: 0;
+			padding-right: 100px;
+			&::after {
+				left: auto;
+				right: -3px;
+			}
+		}
+		&:nth-child(2n) {
+			margin-left: auto;
+			&::after {
+				left: -2px;
+			}
+		}
+		&:nth-child(2n + 1) .timeline-icon {
+			left: auto;
+			right: -37px;
+		}
+		&:nth-child(2n) .timeline-icon {
+			left: -37px;
+		}
+	}
+}
+.timeline-item:first-of-type {
+	&:before {
+		content: "";
+		width: 5px;
+		background-color: #e1eef4;
+		border-radius: 3px;
+		position: absolute;
+		top: -77px;
+		right: -3px;
+		height: 65px;
+		display: none;
+		@media (min-width: @ipad-mini) {
+			display: block;
+		}
+	}
+}
+.timeline-icon {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 74px;
+	height: 74px;
+	box-shadow: 0 3px 35px rgba(0, 112, 187, 0.35);
+	border-radius: 28px;
+	background-color: #ffffff;
+}
+.timeline-icon__wrapper {
+	width: 40px;
+	height: auto;
+}
+.timeline-text p {
+	color: #000000;
+	font-size: 18px;
+	font-weight: 500;
+}
+.timeline-text h3 {
+	display: inline-block;
+	color: #000000;
+	font-size: 18px;
+	font-weight: 800;
+	z-index: 2;
+	@media (min-width: @iphone) {
+	}
+	@media (min-width: @ipad-mini) {
+		font-size: 24px;
+	}
+	@media (min-width: @ipad-pro) {
+	}
+	@media (min-width: @macbook13) {
+		font-size: 26px;
+	}
+}
+.timeline-text .bottom-line {
+	&::after {
+		display: none;
+		@media (min-width: @ipad-pro) {
+			display: block;
+			content: "";
+			position: absolute;
+			bottom: 5px;
+			left: -5px;
+			right: -5px;
+			height: 7px;
+			background-color: @underline;
+			z-index: -1;
+		}
+	}
+}
